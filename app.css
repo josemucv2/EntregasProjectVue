@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.style-nav{
+    height: 80px;
+    box-shadow: 5px 1px 20px 2px rgba(0, 0, 0, 0.425);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.Logo{
+   font-size: 40px;
+   width: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.style-items-list{
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+.box-list-items{
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 10px;
+    background-color: #96969674;
+    width: 80px;
+
+}
+
+.userNav-style{
+    text-align: center;
+    width: 400px;
+    
+}
+
+.button-nav{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    
+}
+.button-nav:hover{
+   border: px solid black;
+}
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInDown {
+  0% {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  }
+  @keyframes slideInDown {
+  0% {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  }
+  } 
+ 
+
+  .posisionar{
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+  }
+
+  .style-table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+  }
+
+  .numberPar {
+      background-color: #999999;
+      color: white;
+  }
+.numberImpar {
+        background-color: #51515174;
+        color: white;
+    
+}
