@@ -28,9 +28,8 @@
                 </nav>
             </header>
             <main class="posisionar container">
-                <h2>Listas De Usuarios</h2>
-                <main-users :list-user="listUser" :addClass="addClases"></main-users>
-                
+                <h2 :style="{'text-align' : 'center'}">Listas De Usuarios</h2>
+                <main-users  :titulos="tabla1.titulos" :registros="tabla1.registros"></main-users>
             </main>
         </div>
     </body>
