@@ -38,23 +38,54 @@ Vue.component('main-users', {
     `
 })
 
+Vue.component('rest-list' ,{
+    props :{
+        restaurantes: {
+            type: Array,
+            required: true
+        },
+        datos: {
+            type: Array,
+            required: true
+        }
+    } ,
+
+    template :`
+      <div>
+
+      <table class="table table-striped table-dark">
+            <thead class="thead-light">
+                <tr>
+                    <th v-for="(restaurantes, e) in restaurantes" :key="e" scope="col">{{ restaurantes }}</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(rest, j) in datos" :key="j">
+                
+               <th v-for="(datos,d) in rest" :key="d">{{datos}}</th>
+            
+            
+            </tr>
+        
+        </tbody>
+        </table>
+      
+      
+      </div>
+    
+    
+    
+    `
+
+})
+
 
 var app = new Vue({
     el: '#app',
 
     data:{
         menu: false,
-        // listUser: [
-
-
-        //     {id: 1, nombre: 'Jose', Apellido: 'Martinez', Pais: 'Venezuela'},
-        //     {id: 2, nombre: 'Juan', Apellido: 'Perez', Pais: 'Colombia'},
-        //     {id: 3, nombre: 'Alexander', Apellido: 'Rincon', Pais: 'Argentina'},
-        //     {id: 4, nombre: 'Rocky', Apellido: 'Moncada', Pais: 'Chile'},
-        //     {id: 5, nombre: 'Milton', Apellido: 'Avel', Pais: 'Peru'},
-            
-        // ],
-
+        
         tabla1: {
             titulos: ["ID", "Nombre", "Apellido", "Pais"],
              registros: [
@@ -66,6 +97,14 @@ var app = new Vue({
             ],
         } , 
         
+        tabla2: {
+            Restaurantes: ["ID", "Restaurantes", "Comida Especial", "Contacto"],
+            datos: [[1, "La Pizzeria", "Pizza", "55555555"],
+                    [2, "La Pasteleria", "Pastel", "44444444"],
+                    [3, "La Hamburgueseria", "Hamburguesa", "66666666"],
+                    [4, "La reposteria", "Pastel", "77777777"],
+                    [5, "La Pepiteria", "Pepitos", "88888888"]]
+        }
 
          
  

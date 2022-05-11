@@ -27,9 +27,11 @@
                     </div>
                 </nav>
             </header>
-            <main class="posisionar container">
+            <main class="container">
                 <h2 :style="{'text-align' : 'center'}">Listas De Usuarios</h2>
                 <main-users  :titulos="tabla1.titulos" :registros="tabla1.registros"></main-users>
+                <h2 :style="{'text-align' : 'center'}">Listas De Restaurantes</h2>
+                <rest-List :restaurantes="tabla2.Restaurantes" :datos="tabla2.datos"></rest-List>
             </main>
         </div>
     </body>
